@@ -16,7 +16,7 @@ public class Test2 {
         // Get the variable list.
         Field [] fldss = c.getFields(); // Gets all the public fields from current class and also
         // the public fields from the super class.
-        Field [] flds = c.getDeclaredFields(); // gets all declared fields in the current class as the Field []
+        Field [] flds = c.getDeclaredFields(); // gets all declared fields in the current class as the Field [] irrespective of the access modifiers.
         for(Field f : flds){
             System.out.println("Name of the variable : "+ f.getName());
             System.out.println("Type of the variable: "+ f.getType().getName());
